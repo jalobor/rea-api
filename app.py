@@ -8,3 +8,9 @@ def root():
         "status": "OK",
         "mensaje": "API desplegada correctamente"
     }
+
+@app.get("/hello")
+def hello():
+    return {
+        "respuesta": "Hola desde Render"
+    }
